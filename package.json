@@ -1,0 +1,14 @@
+{
+  "name": "itbox",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "powershell": "node --loader ts-node/esm --experimental-specifier-resolution=node --experimental-repl-await"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
