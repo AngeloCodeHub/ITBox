@@ -1,6 +1,6 @@
-$VPowerShell="7.4.6"
-$VWinbox="3.41"
-$VWinSCP="5.17.10"
+$VPowerShell = "7.4.6"
+$VWinbox = "3.41"
+$VWinSCP = "5.17.10"
 
 
 # keepass
@@ -33,8 +33,8 @@ https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4
 #   -OutFile "APPs\winbox64.exe"
 
 # Expand-Archive -Path "sourceDL\putty.zip" -DestinationPath "APPs\Putty"
-
-# Invoke-WebRequest -Uri `
-# https://winscp.net/translations/dll/6.3.6/ch.zip `
-#   -OutFile "sourceDL\winscpCH.zip"
-
+<# 
+Invoke-WebRequest -Uri `
+  https://winscp.net/translations/dll/6.3.6/ch.zip `
+  -OutFile "sourceDL\winscpCH.zip"
+ #>
