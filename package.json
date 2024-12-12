@@ -1,0 +1,10 @@
+{
+  "name": "itbox",
+  "packageManager": "yarn@4.5.3",
+  "devDependencies": {
+    "@wdio/cli": "^9.4.1",
+    "edgedriver": "^6.1.1",
+    "typescript": "^5.7.2",
+    "wait-port": "^1.1.0"
+  }
+}
