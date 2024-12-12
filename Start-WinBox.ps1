@@ -1,6 +1,5 @@
-$jsonObject = (Get-Content -Path ".\Confidential\DATA.json") | ConvertFrom-Json
-$APPsDir = $jsonObject[0].APPsDir
-# $DataDir = $jsonObject[0].DATADir
+$jsonObj = (Get-Content -Path ".\env.json") | ConvertFrom-Json
+$APPsDir = $jsonObj[0].APPsDir
 
 # Write-Host $APPsDir
 

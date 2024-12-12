@@ -1,10 +1,8 @@
 
-$jsonObject = (Get-Content -Path ".\Confidential\DATA.json") | ConvertFrom-Json
-$DataDir = $jsonObject[0].DATADir
-$BKdest = $jsonObject[0].DestDir + $DataDir `
+$jsonObj = (Get-Content -Path ".\env.json") | ConvertFrom-Json
+$BKdest = $jsonObj[0].DestDir + "Confidential\" `
   + (Get-Date -Format "yyyyMMddHH") + ".zip"
 
-# Write-Host $DataDir
 # Write-Host $BKdest
-Compress-Archive -Path $DataDir -DestinationPath $BKdest -Force
+Compress-Archive -Path ".\Confidential" -DestinationPath $BKdest -Force
 
